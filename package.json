@@ -1,0 +1,30 @@
+{
+  "name": "tachyons-color-palette-generator",
+  "version": "1.0.0",
+  "description": "Gulp & LESS based generator that will create a color palette for use with Tachyons or similar CSS toolkits",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arun-is/tachyons-color-palette-generator.git"
+  },
+  "keywords": [
+    "color",
+    "tachyons",
+    "color",
+    "palette"
+  ],
+  "author": "Arun Venkatesan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arun-is/tachyons-color-palette-generator/issues"
+  },
+  "homepage": "https://github.com/arun-is/tachyons-color-palette-generator#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.0",
+    "gulp-webserver": "^0.9.1"
+  }
+}
