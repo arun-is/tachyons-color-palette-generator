@@ -23,7 +23,9 @@
         @pair:  extract(@list, @i);
         @key:   extract(@pair, 1);
         @value: extract(@pair, 2);
-
+        .@{key} {
+            color: @value;
+        }
         .shade(@key, @value, 90);
         .tint(@key, @value, 90);
     }
