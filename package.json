@@ -17,11 +17,9 @@
     "palette"
   ],
   "author": "Arun Venkatesan",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/arun-is/tachyons-color-palette-generator/issues"
+  "scripts": {
+    "gulp": "gulp"
   },
-  "homepage": "https://github.com/arun-is/tachyons-color-palette-generator#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-less": "^3.3.0",
