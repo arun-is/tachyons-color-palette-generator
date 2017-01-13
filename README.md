@@ -4,12 +4,17 @@
 * Install node
 * Install all node dependencies using:
 
-  npm install
+```bash
+npm install
+```
 
 ## Run
 Use the following to run the tool:
-  npm run gulp
-  
+
+```bash
+npm run gulp
+```
+
 ## Configure
 Edit config.less with the colors you wish to use
 
