@@ -1,5 +1,19 @@
 # tachyons-color-palette-generator
 
+## Install:
+* Install node
+* Install all node dependencies using:
+
+  npm install
+
+## Run
+Use the following to run the tool:
+  npm run gulp
+  
+## Configure
+Edit config.less with the colors you wish to use
+
+## License
 MIT License
 
 Copyright (c) 2017 Arun Venkatesan
