@@ -1,3 +1,30 @@
-body {
-  color: red;
+@import "./config.less";
+
+.shade(@key, @value, @counter) when (@counter > 0) {
+  .shade(@key, @value, (@counter - 10));
+  .@{key}-shade-@{counter} {
+      color: shade(@value, @counter);
+  }
+}
+
+.tint(@key, @value, @counter) when (@counter > 0) {
+  .tint(@key, @value, (@counter - 10));
+  .@{key}-tint-@{counter} {
+      color: tint(@value, @counter);
+  }
+}
+
+.make-classes(@colors);
+
+.make-classes(@list) {
+    .iter(length(@list));
+    .iter(@i) when (@i > 0) {
+        .iter(@i - 1);
+        @pair:  extract(@list, @i);
+        @key:   extract(@pair, 1);
+        @value: extract(@pair, 2);
+
+        .shade(@key, @value, 90);
+        .tint(@key, @value, 90);
+    }
 }
