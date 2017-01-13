@@ -24,4 +24,4 @@ gulp.task('watchless', function() {
   );
 });
 
-gulp.task('default', ['less', 'watchless', 'webserver']);
+gulp.task('default', ['less', 'watchless']);

@@ -7,10 +7,24 @@
   }
 }
 
+.b--shade(@key, @value, @counter) when (@counter > 0) {
+  .b--shade(@key, @value, (@counter - 10));
+  .b--@{key}-shade-@{counter} {
+      border-color: shade(@value, @counter);
+  }
+}
+
 .tint(@key, @value, @counter) when (@counter > 0) {
   .tint(@key, @value, (@counter - 10));
   .@{key}-tint-@{counter} {
       color: tint(@value, @counter);
+  }
+}
+
+.b--tint(@key, @value, @counter) when (@counter > 0) {
+  .b--tint(@key, @value, (@counter - 10));
+  .b--@{key}-tint-@{counter} {
+      border-color: tint(@value, @counter);
   }
 }
 
@@ -24,6 +38,11 @@
     }
     .shade(@key, @value, 90);
     .tint(@key, @value, 90);
+    .b--@{key} {
+        border-color: @value;
+    }
+    .b--shade(@key, @value, 90);
+    .b--tint(@key, @value, 90);
   }
   .loop(length(@c));
 }
