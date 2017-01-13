@@ -11,11 +11,17 @@ gulp.task('webserver', function() {
   }));
 });
 
-gulp.task('less', function() {
+gulp.task('less', function () {
+  return gulp.src('./src/style.less')
+    .pipe(less())
+    .pipe(gulp.dest('./bin'));
+});
+
+gulp.task('watchless', function() {
   watchLess('./src/style.less')
     .pipe(less())
     .pipe(gulp.dest('./bin')
   );
 });
 
-gulp.task('default', ['less', 'webserver']);
+gulp.task('default', ['less', 'watchless', 'webserver']);

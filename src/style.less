@@ -1,4 +1,4 @@
-@import "./config.less";
+@import "../config.less";
 
 .shade(@key, @value, @counter) when (@counter > 0) {
   .shade(@key, @value, (@counter - 10));
@@ -14,19 +14,18 @@
   }
 }
 
-.make-classes(@colors);
-
-.make-classes(@list) {
-    .iter(length(@list));
-    .iter(@i) when (@i > 0) {
-        .iter(@i - 1);
-        @pair:  extract(@list, @i);
-        @key:   extract(@pair, 1);
-        @value: extract(@pair, 2);
-        .@{key} {
-            color: @value;
-        }
-        .shade(@key, @value, 90);
-        .tint(@key, @value, 90);
+.make-classes(@c, @n) {
+  .loop(@i) when (@i > 0) {
+    .loop((@i - 1));    // next iteration
+    @key:   extract(@n, @i);
+    @value: extract(@c, @i);
+    .@{key} {
+        color: @value;
     }
+    .shade(@key, @value, 90);
+    .tint(@key, @value, 90);
+  }
+  .loop(length(@c));
 }
+
+.make-classes(@colors, @names);
