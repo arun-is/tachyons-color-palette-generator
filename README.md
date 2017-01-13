@@ -1,6 +1,6 @@
 # tachyons-color-palette-generator
 
-## Install:
+## Install
 * Install node
 * Install all node dependencies using:
 
