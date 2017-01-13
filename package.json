@@ -4,7 +4,7 @@
   "description": "Gulp & LESS based generator that will create a color palette for use with Tachyons or similar CSS toolkits",
   "main": "gulpfile.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "gulp": "gulp"
   },
   "repository": {
     "type": "git",
@@ -17,9 +17,6 @@
     "palette"
   ],
   "author": "Arun Venkatesan",
-  "scripts": {
-    "gulp": "gulp"
-  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-less": "^3.3.0",
