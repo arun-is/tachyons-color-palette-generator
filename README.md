@@ -8,15 +8,18 @@
 npm install
 ```
 
-## Run
-Use the following to run the tool:
+## Use
+Use the following to run the tool.
 
 ```bash
 npm run gulp
 ```
 
-## Configure
-Edit config.less with the colors you wish to use
+It will watch for changes and automatically generate css.
+
+Edit config.less with the colors you wish to use.
+
+CSS can be found in bin/style.css
 
 ## License
 MIT License
