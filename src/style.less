@@ -52,16 +52,16 @@
     }
     .shade(@key, @value, 90);
     .tint(@key, @value, 90);
+    .bg-@{key} {
+        background-color: @value;
+    }
+    .bg-shade(@key, @value, 90);
+    .bg-tint(@key, @value, 90);
     .b--@{key} {
         border-color: @value;
     }
     .b--shade(@key, @value, 90);
     .b--tint(@key, @value, 90);
-    .bg-@{key} {
-        border-color: @value;
-    }
-    .bg-shade(@key, @value, 90);
-    .bg-tint(@key, @value, 90);
   }
   .loop(length(@c));
 }
