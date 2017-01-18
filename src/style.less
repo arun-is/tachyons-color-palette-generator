@@ -7,6 +7,13 @@
   }
 }
 
+.bg-shade(@key, @value, @counter) when (@counter > 0) {
+  .bg-shade(@key, @value, (@counter - 10));
+  .bg-@{key}-shade-@{counter} {
+      background-color: shade(@value, @counter);
+  }
+}
+
 .b--shade(@key, @value, @counter) when (@counter > 0) {
   .b--shade(@key, @value, (@counter - 10));
   .b--@{key}-shade-@{counter} {
@@ -18,6 +25,13 @@
   .tint(@key, @value, (@counter - 10));
   .@{key}-tint-@{counter} {
       color: tint(@value, @counter);
+  }
+}
+
+.bg-tint(@key, @value, @counter) when (@counter > 0) {
+  .bg-tint(@key, @value, (@counter - 10));
+  .bg-@{key}-tint-@{counter} {
+      background-color: tint(@value, @counter);
   }
 }
 
@@ -43,6 +57,11 @@
     }
     .b--shade(@key, @value, 90);
     .b--tint(@key, @value, 90);
+    .bg-@{key} {
+        border-color: @value;
+    }
+    .bg-shade(@key, @value, 90);
+    .bg-tint(@key, @value, 90);
   }
   .loop(length(@c));
 }
