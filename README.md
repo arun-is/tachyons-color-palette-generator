@@ -1,5 +1,7 @@
 # tachyons-color-palette-generator
 
+This generator will take a set of colors and generate shades and tints for colro, border-color and background-color in a tachyons style syntax.
+
 ## Install
 * Install node
 * Install all node dependencies using:
