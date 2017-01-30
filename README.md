@@ -2,6 +2,9 @@
 
 This generator will take a set of colors and generate shades and tints for color, border-color and background-color in a tachyons style syntax.
 
+Future Plans:
+generate more complex palettes that chagne HSL instead of just calculating shades and tints
+
 ## Install
 * Install node
 * Install all node dependencies using:
