@@ -2,9 +2,6 @@
 
 This generator will take a set of colors and generate shades and tints for color, border-color and background-color in a tachyons style syntax.
 
-Future Plans:
-generate more complex palettes that chagne HSL instead of just calculating shades and tints
-
 ## Install
 * Install node
 * Install all node dependencies using:
@@ -25,6 +22,10 @@ It will watch for changes and automatically generate css.
 Edit config.less with the colors you wish to use.
 
 CSS can be found in bin/style.css
+
+## Future Plans:
+* Generate more complex palettes that chagne HSL instead of just calculating shades and tints
+* Automatically generate palettes using triads, quadrads, etc.
 
 ## License
 MIT License
